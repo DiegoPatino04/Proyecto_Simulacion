@@ -16,6 +16,7 @@ var corruption_max: float = 1.0
 var enemy_name:     String = "Derivator"
 var enemy_hp:       int    = 80
 var enemy_hp_max:   int    = 80
+var current_map:    int    = 1     
 
 # ── HELPERS ───────────────────────────────────────────────
 func is_party_dead() -> bool:
