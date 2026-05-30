@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="semestre-maldito"
+run/main_scene="uid://btwy8hk0cmx"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalState="*uid://dvhpn4je5pnae"
+SystemDynamics="*uid://c7wrp2f3oo4t6"
+
+[file_customization]
+
+folder_colors={
+"res://project/": "teal"
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

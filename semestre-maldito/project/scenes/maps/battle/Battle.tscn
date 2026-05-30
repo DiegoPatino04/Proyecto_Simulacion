@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://wade4kxk0mvr"]
+
+[ext_resource type="Texture2D" uid="uid://f7t6alpgpeh6" path="res://project/data/characteres/character_maleAdventurer.svg" id="1_bagex"]
+[ext_resource type="Script" uid="uid://bbhil3xbgtpxh" path="res://project/scripts/Battle.gd" id="1_q4ppy"]
+[ext_resource type="Texture2D" uid="uid://dtgfbsfmemwy1" path="res://project/data/characteres/character_robot.svg" id="2_q4ppy"]
+
+[node name="Battle_tscn" type="Node2D" unique_id=2048968188]
+script = ExtResource("1_q4ppy")
+
+[node name="Background" type="ColorRect" parent="." unique_id=2115259951]
+offset_right = 1147.0
+offset_bottom = 647.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="Combatants" type="Node2D" parent="." unique_id=2082836995]
+position = Vector2(326, 209)
+
+[node name="PlayerSprite" type="Sprite2D" parent="Combatants" unique_id=2026298483]
+texture = ExtResource("1_bagex")
+region_enabled = true
+region_rect = Rect2(0, 32, 192, 224)
+
+[node name="EnemySprite" type="Sprite2D" parent="Combatants" unique_id=401532494]
+position = Vector2(197, 21)
+scale = Vector2(2.125, 2.1458333)
+texture = ExtResource("2_q4ppy")
+region_enabled = true
+region_rect = Rect2(96, 32, 96, 96)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1117761714]
+
+[node name="TurnLabel" type="Label" parent="HUD" unique_id=1135550041]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 210.0
+offset_top = -319.0
+offset_right = 301.0
+offset_bottom = -296.0
+text = "Turno del jugado:"
+
+[node name="EnemyName" type="Label" parent="HUD" unique_id=889076836]
+offset_left = 491.0
+offset_top = 330.0
+offset_right = 553.0
+offset_bottom = 353.0
+rotation = -0.02802764
+text = "DERIVATOR"
+
+[node name="EnemyHPBar" type="ProgressBar" parent="HUD" unique_id=1082383442]
+offset_left = 450.0
+offset_top = 372.0
+offset_right = 614.0
+offset_bottom = 399.0
+max_value = 80.0
+value = 80.0
+
+[node name="PlayerHPBar" type="ProgressBar" parent="HUD" unique_id=510544385]
+offset_left = 280.0
+offset_top = 355.0
+offset_right = 367.0
+offset_bottom = 382.0
+max_value = 80.0
+value = 80.0
+
+[node name="PlayerHPLabel" type="Label" parent="HUD" unique_id=1841212119]
+anchors_preset = -1
+offset_left = 285.0
+offset_top = 330.0
+offset_right = 364.0
+offset_bottom = 353.0
+text = "HP: 80/80"
+
+[node name="BattleLog" type="Label" parent="HUD" unique_id=642864279]
+anchors_preset = -1
+offset_left = 931.0
+offset_top = 37.0
+offset_right = 1009.0
+offset_bottom = 60.0
+text = "Battle log:"
+autowrap_mode = 2
+
+[node name="AttackButton" type="Button" parent="HUD" unique_id=163304920]
+offset_left = 385.0
+offset_top = 427.0
+offset_right = 455.0
+offset_bottom = 458.0
+text = "ATACAR"
+
+[node name="ResultLabel" type="Label" parent="HUD" unique_id=1152273478]
+offset_left = 936.0
+offset_top = 7.0
+offset_right = 1001.0
+offset_bottom = 30.0
+text = "Results: "
+
+[node name="CorruptionLabel" type="Label" parent="HUD" unique_id=1692556983]
+offset_left = 793.0
+offset_top = 37.0
+offset_right = 899.0
+offset_bottom = 60.0
+text = "CORRUPCIÓN"
+
+[node name="CorruptionBar" type="ProgressBar" parent="HUD" unique_id=1813228034]
+offset_left = 273.0
+offset_top = 387.0
+offset_right = 389.0
+offset_bottom = 416.0

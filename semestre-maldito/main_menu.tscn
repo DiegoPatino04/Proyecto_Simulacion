@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://btwy8hk0cmx"]
+
+[ext_resource type="Script" uid="uid://d3rnwnfe3ldo3" path="res://project/scripts/main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://dvj88fqrnmaq6" path="res://project/data/fondos/main-menu.jpg" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://djl0efvg4l55e" path="res://project/data/fondos/title1.png" id="3_jix8l"]
+[ext_resource type="Texture2D" uid="uid://cgn4xq254taya" path="res://project/data/fondos/title2.png" id="4_glbon"]
+
+[node name="MainMenu" type="Control" unique_id=1881226512]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_7vrkn")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1847927580]
+position = Vector2(-2.000061, 2.000061)
+scale = Vector2(1.1220703, 1.1475849)
+texture = ExtResource("2_fu7sn")
+centered = false
+
+[node name="Tittle1" type="Sprite2D" parent="." unique_id=191850527]
+position = Vector2(410, 104)
+scale = Vector2(0.56329113, 0.60084033)
+texture = ExtResource("3_jix8l")
+
+[node name="Tittle2" type="Sprite2D" parent="." unique_id=1605125539]
+position = Vector2(648, 181)
+scale = Vector2(0.6665775, 0.5903361)
+texture = ExtResource("4_glbon")
+
+[node name="Button" type="Button" parent="." unique_id=502378890]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 15.787001
+anchor_top = 8.6
+anchor_right = 15.787001
+anchor_bottom = 8.6
+offset_left = -85.48004
+offset_top = -20.0
+offset_right = 74.51996
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start
+"
