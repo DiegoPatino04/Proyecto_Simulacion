@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c3ow3byp75f4e"]
+
+[ext_resource type="SpriteFrames" uid="uid://bmsf78jru4mw1" path="res://project/data/characteres/Redes/spriteFrame_Redes.tres" id="1_uqcmp"]
+[ext_resource type="Script" uid="uid://b0h5mip8iukph" path="res://project/data/characteres/Redes/redes.gd" id="1_yffq7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yffq7"]
+size = Vector2(22, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7bqa"]
+size = Vector2(22, 26)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1528543736 node_paths=PackedStringArray("animation", "area_2D")]
+script = ExtResource("1_yffq7")
+animation = NodePath("AnimatedSprite2D")
+area_2D = NodePath("Area2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1849767811]
+sprite_frames = ExtResource("1_uqcmp")
+animation = &"Muerte"
+frame_progress = 0.91663295
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1254453091]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_yffq7")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1999949744]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=231255640]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_q7bqa")

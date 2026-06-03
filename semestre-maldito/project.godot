@@ -57,6 +57,7 @@ Derecha={
 2d_physics/layer_4="Jugador"
 2d_physics/layer_5="Extras"
 2d_physics/layer_6="Paredes"
+2d_physics/layer_7="Salida"
 
 [physics]
 

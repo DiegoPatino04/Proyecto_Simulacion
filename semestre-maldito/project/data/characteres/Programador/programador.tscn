@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://us24s8odfr17"]
+
+[ext_resource type="SpriteFrames" uid="uid://bmpdgu74nb1f4" path="res://project/data/characteres/Programador/spriteFrame_Programador.tres" id="1_ehj11"]
+[ext_resource type="Script" uid="uid://cktw0b1cko3si" path="res://project/data/characteres/Programador/programador.gd" id="1_olghy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_olghy"]
+size = Vector2(22, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rd5vy"]
+size = Vector2(22, 26)
+
+[node name="Programador" type="CharacterBody2D" unique_id=1958744854 node_paths=PackedStringArray("animation", "area_2D")]
+collision_layer = 9
+collision_mask = 34
+script = ExtResource("1_olghy")
+animation = NodePath("AnimatedSprite2D")
+area_2D = NodePath("Area2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2054759764]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_olghy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1022631871]
+sprite_frames = ExtResource("1_ehj11")
+animation = &"Ataque Programador"
+frame_progress = 0.090487994
+
+[node name="Area2D" type="Area2D" parent="." unique_id=603910839]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=381944630]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_rd5vy")
