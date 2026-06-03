@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d1ynfx7ib7cqv"]
+
+[ext_resource type="SpriteFrames" uid="uid://ho5d80vekaa2" path="res://project/data/characteres/Enemigos/Enemigo2/spriteFrame_Enemigo2.tres" id="1_htc1d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ypp4"]
+size = Vector2(20, 25)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1823866773]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1393459946]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_0ypp4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=870969523]
+sprite_frames = ExtResource("1_htc1d")
+animation = &"Atack_Enemy"
+frame_progress = 0.9448748

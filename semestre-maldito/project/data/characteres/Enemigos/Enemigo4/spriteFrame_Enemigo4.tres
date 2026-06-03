@@ -1,0 +1,142 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://h0n6dwqfpk88"]
+
+[ext_resource type="Texture2D" uid="uid://5hxhinej6168" path="res://project/data/characteres/Enemigos/Enemigo4/Anim_atack_Enemy_4.png" id="1_hw5aa"]
+[ext_resource type="Texture2D" uid="uid://cxg52wap6cx6i" path="res://project/data/characteres/Enemigos/Enemigo4/Anim_Death_Enemy_4.png" id="2_i8cte"]
+[ext_resource type="Texture2D" uid="uid://b1nxxaeyshhne" path="res://project/data/characteres/Enemigos/Enemigo4/Anim_idle_Enemy_4.png" id="3_of51u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ujr"]
+atlas = ExtResource("1_hw5aa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_py2hj"]
+atlas = ExtResource("1_hw5aa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v088m"]
+atlas = ExtResource("1_hw5aa")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lm0iu"]
+atlas = ExtResource("1_hw5aa")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87cox"]
+atlas = ExtResource("1_hw5aa")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10oqx"]
+atlas = ExtResource("1_hw5aa")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i58xl"]
+atlas = ExtResource("1_hw5aa")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e27i1"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbdma"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thbno"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kho4"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_egp0y"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcsjm"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkhop"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2pru"]
+atlas = ExtResource("2_i8cte")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxjlu"]
+atlas = ExtResource("3_of51u")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jno57"]
+atlas = ExtResource("3_of51u")
+region = Rect2(0, 32, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1ujr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_py2hj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v088m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lm0iu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87cox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10oqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i58xl")
+}],
+"loop": true,
+"name": &"Atack_Enemy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e27i1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cbdma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thbno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0kho4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_egp0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lcsjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lkhop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2pru")
+}],
+"loop": true,
+"name": &"Death_Enemy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxjlu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jno57")
+}],
+"loop": true,
+"name": &"Idle_Enemy",
+"speed": 5.0
+}]

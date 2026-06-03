@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b66oq2n41d3cw"]
+
+[ext_resource type="SpriteFrames" uid="uid://ve1wtbayv25w" path="res://project/data/characteres/Enemigos/Boss/spriteFrame_Boss.tres" id="1_xbwnw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ebvo"]
+size = Vector2(34, 33)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1630119590]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1354445011]
+sprite_frames = ExtResource("1_xbwnw")
+animation = &"Death_Boss"
+frame_progress = 0.048597336
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1588260277]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_0ebvo")

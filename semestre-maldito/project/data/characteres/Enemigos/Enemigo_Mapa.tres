@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ddjxkoq3ygbqy"]
+
+[ext_resource type="Texture2D" uid="uid://6uq0uodaowqi" path="res://project/data/characteres/Enemigos/Anim_Move_Enemy_Idle.png" id="1_2h87h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0vwl"]
+atlas = ExtResource("1_2h87h")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfjpf"]
+atlas = ExtResource("1_2h87h")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgxbf"]
+atlas = ExtResource("1_2h87h")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qast"]
+atlas = ExtResource("1_2h87h")
+region = Rect2(32, 32, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0vwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pfjpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgxbf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qast")
+}],
+"loop": true,
+"name": &"Enemy_idle",
+"speed": 5.0
+}]

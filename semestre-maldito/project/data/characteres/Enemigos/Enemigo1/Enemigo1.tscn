@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b11lsrgekwhou"]
+
+[ext_resource type="SpriteFrames" uid="uid://3d1s2xbpetd2" path="res://project/data/characteres/Enemigos/Enemigo1/spriteFrame_Enemy1.tres" id="1_jlif3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5gyb5"]
+size = Vector2(19, 19)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1381984678]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=45931073]
+sprite_frames = ExtResource("1_jlif3")
+animation = &"Death_Enemy"
+frame_progress = 0.056454804
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1278567790]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_5gyb5")
