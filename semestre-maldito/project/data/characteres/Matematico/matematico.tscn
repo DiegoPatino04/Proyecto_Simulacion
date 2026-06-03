@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dpbbblblhaqmr"]
+
+[ext_resource type="SpriteFrames" uid="uid://qo4fx3q6uayo" path="res://project/data/characteres/Matematico/sprite_frame_matematico.tres" id="1_3lmm5"]
+[ext_resource type="Script" uid="uid://cum4kafr3ypo2" path="res://project/data/characteres/Matematico/matematico.gd" id="1_o6lld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6lld"]
+size = Vector2(25, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6f3k"]
+size = Vector2(24, 24)
+
+[node name="Matematico" type="CharacterBody2D" unique_id=228137257 node_paths=PackedStringArray("animation", "area_2D")]
+collision_layer = 8
+collision_mask = 34
+script = ExtResource("1_o6lld")
+animation = NodePath("AnimatedSprite2D")
+area_2D = NodePath("Area2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1538543459]
+shape = SubResource("RectangleShape2D_o6lld")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=169794595]
+sprite_frames = ExtResource("1_3lmm5")
+animation = &"Idle Mirando Izquierda"
+frame_progress = 0.6951761
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1267744004]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1590674078]
+shape = SubResource("RectangleShape2D_g6f3k")
