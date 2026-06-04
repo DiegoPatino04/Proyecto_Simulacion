@@ -9,19 +9,27 @@ size = Vector2(20, 22)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5gan8"]
 size = Vector2(20, 22)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1586102167]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1586102167 node_paths=PackedStringArray("animation")]
+collision_layer = 4
+collision_mask = 114
 script = ExtResource("1_2w334")
+animation = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1758749222]
 sprite_frames = ExtResource("1_y0jqx")
 animation = &"Idle Movement"
-frame_progress = 0.4566293
+frame_progress = 0.6526982
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1177187355]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_2w334")
 
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1201602726]
+collision_mask = 40
+
 [node name="Area2D" type="Area2D" parent="." unique_id=1085596142]
+collision_layer = 4
+collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=378141419]
 position = Vector2(0, 1)

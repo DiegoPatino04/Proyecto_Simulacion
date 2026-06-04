@@ -49,27 +49,27 @@ texture = ExtResource("1_a2f5a")
 [node name="Anterior" type="Button" parent="." unique_id=645444695]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.349
-anchor_top = 0.55600005
-anchor_right = 0.349
-anchor_bottom = 0.55600005
-offset_left = -19.048004
-offset_top = -20.288025
-offset_right = 17.951965
-offset_bottom = 20.711975
+anchor_left = 0.4
+anchor_top = 0.5
+anchor_right = 0.4
+anchor_bottom = 0.5
+offset_left = -18.800018
+offset_top = -22.0
+offset_right = 18.199951
+offset_bottom = 19.0
 text = "<"
 
 [node name="Siguiente" type="Button" parent="." unique_id=530864816]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.57900006
-anchor_top = 0.56100005
-anchor_right = 0.57900006
-anchor_bottom = 0.56100005
-offset_left = -19.008057
-offset_top = -20.528046
-offset_right = 17.991943
-offset_bottom = 20.471954
+anchor_left = 0.60200006
+anchor_top = 0.49300003
+anchor_right = 0.60200006
+anchor_bottom = 0.49300003
+offset_left = -18.50409
+offset_top = -20.46402
+offset_right = 18.49591
+offset_bottom = 20.53598
 text = ">"
 
 [node name="Seleccionar" type="Button" parent="." unique_id=1552970784]
@@ -79,14 +79,14 @@ anchor_left = 4.0140004
 anchor_top = 3.061
 anchor_right = 4.0140004
 anchor_bottom = 3.061
-offset_left = -4141.1284
-offset_top = -1538.5281
-offset_right = -4044.1284
-offset_bottom = -1497.5281
+offset_left = -4096.1284
+offset_top = -1585.5281
+offset_right = -3999.1284
+offset_bottom = -1544.5281
 text = "Seleccionar"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2118764451]
-position = Vector2(532.00006, 348.00003)
+position = Vector2(576, 324)
 scale = Vector2(4.781249, 4.75)
 
 [connection signal="pressed" from="Anterior" to="." method="_on_anterior_pressed"]

@@ -195,7 +195,55 @@ tile_map_data = PackedByteArray("AAAFAPr/AAAAAAAAAAAFAPv/AAAAAAAAAAAFAPz/AAAAAAA
 tile_set = SubResource("TileSet_7c3oi")
 
 [node name="Spawn" type="Node2D" parent="." unique_id=1776381304]
-position = Vector2(235, 137)
+position = Vector2(232, 137)
 
-[node name="CharacterBody2D" parent="." unique_id=1586102167 instance=ExtResource("4_35oe0")]
-position = Vector2(-15, 105)
+[node name="Enemigo1" parent="." unique_id=1586102167 node_paths=PackedStringArray("waypoints") instance=ExtResource("4_35oe0")]
+position = Vector2(-94, 81)
+waypoints = [NodePath("../waypoints/Waypoint"), NodePath("../waypoints/Waypoint2"), NodePath("../waypoints/Waypoint3"), NodePath("../waypoints/Waypoint4")]
+
+[node name="Enemigo2" parent="." unique_id=1439955210 node_paths=PackedStringArray("waypoints") instance=ExtResource("4_35oe0")]
+position = Vector2(57, -23)
+waypoints = [NodePath("../waypoints/Waypoint5"), NodePath("../waypoints/Waypoint6"), NodePath("../waypoints/Waypoint7"), NodePath("../waypoints/Waypoint8")]
+
+[node name="Enemigo3" parent="." unique_id=1671298497 node_paths=PackedStringArray("waypoints") instance=ExtResource("4_35oe0")]
+position = Vector2(-248, -8)
+waypoints = [NodePath("../waypoints/Waypoint9"), NodePath("../waypoints/Waypoint10"), NodePath("../waypoints/Waypoint11"), NodePath("../waypoints/Waypoint12")]
+
+[node name="waypoints" type="Node2D" parent="." unique_id=910260362]
+position = Vector2(-17, -39)
+
+[node name="Waypoint" type="Marker2D" parent="waypoints" unique_id=431110495]
+position = Vector2(-71, 127)
+
+[node name="Waypoint2" type="Marker2D" parent="waypoints" unique_id=585082020]
+position = Vector2(89, 127)
+
+[node name="Waypoint3" type="Marker2D" parent="waypoints" unique_id=1911478920]
+position = Vector2(89, 191)
+
+[node name="Waypoint4" type="Marker2D" parent="waypoints" unique_id=2141770254]
+position = Vector2(-71, 191)
+
+[node name="Waypoint5" type="Marker2D" parent="waypoints" unique_id=376681824]
+position = Vector2(73, 15)
+
+[node name="Waypoint6" type="Marker2D" parent="waypoints" unique_id=1042848148]
+position = Vector2(-7, 15)
+
+[node name="Waypoint7" type="Marker2D" parent="waypoints" unique_id=141878406]
+position = Vector2(-7, -49)
+
+[node name="Waypoint8" type="Marker2D" parent="waypoints" unique_id=1351278600]
+position = Vector2(73, -49)
+
+[node name="Waypoint9" type="Marker2D" parent="waypoints" unique_id=578092663]
+position = Vector2(-231, 31)
+
+[node name="Waypoint10" type="Marker2D" parent="waypoints" unique_id=957558799]
+position = Vector2(-231, -49)
+
+[node name="Waypoint11" type="Marker2D" parent="waypoints" unique_id=1655366574]
+position = Vector2(-135, -49)
+
+[node name="Waypoint12" type="Marker2D" parent="waypoints" unique_id=2108160669]
+position = Vector2(-135, 31)
