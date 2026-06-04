@@ -16,24 +16,72 @@ scale = Vector2(0.68694097, 0.9350649)
 texture = ExtResource("2_dni8r")
 
 [node name="Combatants" type="Node2D" parent="." unique_id=2082836995]
-position = Vector2(326, 209)
+position = Vector2(331, 219)
 
 [node name="Node2D" type="Node2D" parent="Combatants" unique_id=1217132038]
 position = Vector2(226, -49)
 
 [node name="Matematico" parent="Combatants" unique_id=228137257 instance=ExtResource("3_qh533")]
-position = Vector2(-15, 225)
+position = Vector2(243.99998, 220)
 scale = Vector2(5, 5)
 
 [node name="Programador" parent="Combatants" unique_id=1958744854 instance=ExtResource("4_o87rm")]
-position = Vector2(220, 226)
+position = Vector2(0.9999924, 221)
 scale = Vector2(5, 5)
 
 [node name="CharacterBody2D" parent="Combatants" unique_id=1528543736 instance=ExtResource("5_jbfnl")]
-position = Vector2(440, 231)
+position = Vector2(464, 223)
 scale = Vector2(5, 5)
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1117761714]
+
+[node name="Player1HPBar" type="ProgressBar" parent="HUD" unique_id=510544385]
+offset_left = 289.0
+offset_top = 545.0386
+offset_right = 385.0
+offset_bottom = 572.0386
+max_value = 80.0
+value = 80.0
+
+[node name="Player2HPBar" type="ProgressBar" parent="HUD" unique_id=2134137627]
+offset_left = 530.0
+offset_top = 540.0386
+offset_right = 620.0
+offset_bottom = 567.0386
+max_value = 80.0
+value = 80.0
+
+[node name="Player3HPBar" type="ProgressBar" parent="HUD" unique_id=1490461342]
+offset_left = 748.0
+offset_top = 537.0386
+offset_right = 837.0
+offset_bottom = 564.0386
+max_value = 80.0
+value = 80.0
+
+[node name="Player1Label" type="Label" parent="HUD" unique_id=1841212119]
+anchors_preset = -1
+offset_left = 299.0
+offset_top = 513.0386
+offset_right = 373.0
+offset_bottom = 536.0386
+text = "HP: 80/80"
+
+[node name="Player2Label" type="Label" parent="HUD" unique_id=781801971]
+anchors_preset = -1
+offset_left = 537.0
+offset_top = 512.0386
+offset_right = 611.0
+offset_bottom = 535.0386
+text = "HP: 80/80"
+
+[node name="Player3Label" type="Label" parent="HUD" unique_id=580804221]
+anchors_preset = -1
+offset_left = 757.0
+offset_top = 505.0386
+offset_right = 831.0
+offset_bottom = 528.0386
+text = "HP: 80/80"
 
 [node name="TurnLabel" type="Label" parent="HUD" unique_id=1135550041]
 anchors_preset = -1
@@ -45,121 +93,61 @@ offset_left = 210.0
 offset_top = -319.0
 offset_right = 301.0
 offset_bottom = -296.0
-text = "Turno del jugado:"
+text = "Turno del jugador:"
 
 [node name="EnemyName" type="Label" parent="HUD" unique_id=889076836]
-offset_left = 504.00003
-offset_top = 254.00003
-offset_right = 593.0
-offset_bottom = 277.00003
+offset_left = 533.0
+offset_top = 235.03864
+offset_right = 622.0
+offset_bottom = 258.03864
 rotation = -0.011670293
 text = "DERIVATOR"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="EnemyHPBar" type="ProgressBar" parent="HUD" unique_id=1082383442]
-offset_left = 469.0
-offset_top = 292.0
-offset_right = 633.0
-offset_bottom = 319.0
+offset_left = 540.0
+offset_top = 262.0386
+offset_right = 614.0
+offset_bottom = 289.0386
 max_value = 80.0
 value = 80.0
-
-[node name="PlayerHPBar" type="ProgressBar" parent="HUD" unique_id=510544385]
-offset_left = 268.0
-offset_top = 539.0
-offset_right = 355.0
-offset_bottom = 566.0
-max_value = 80.0
-value = 80.0
-
-[node name="PlayerHPBar2" type="ProgressBar" parent="HUD" unique_id=2134137627]
-offset_left = 504.0
-offset_top = 535.0
-offset_right = 591.0
-offset_bottom = 562.0
-max_value = 80.0
-value = 80.0
-
-[node name="PlayerHPBar3" type="ProgressBar" parent="HUD" unique_id=1490461342]
-offset_left = 721.0
-offset_top = 534.0
-offset_right = 808.0
-offset_bottom = 561.0
-max_value = 80.0
-value = 80.0
-
-[node name="PlayerHPLabel" type="Label" parent="HUD" unique_id=1841212119]
-anchors_preset = -1
-offset_left = 272.0
-offset_top = 506.0
-offset_right = 351.0
-offset_bottom = 529.0
-text = "HP: 80/80"
-
-[node name="PlayerHPLabel2" type="Label" parent="HUD" unique_id=781801971]
-anchors_preset = -1
-offset_left = 510.0
-offset_top = 505.0
-offset_right = 589.0
-offset_bottom = 528.0
-text = "HP: 80/80"
-
-[node name="PlayerHPLabel3" type="Label" parent="HUD" unique_id=580804221]
-anchors_preset = -1
-offset_left = 727.0
-offset_top = 505.0
-offset_right = 806.0
-offset_bottom = 528.0
-text = "HP: 80/80"
 
 [node name="BattleLog" type="Label" parent="HUD" unique_id=642864279]
 anchors_preset = -1
-offset_left = 931.0
-offset_top = 37.0
-offset_right = 1009.0
-offset_bottom = 60.0
+offset_left = 787.0
+offset_top = 80.0
+offset_right = 865.0
+offset_bottom = 103.0
 text = "Battle log:"
 autowrap_mode = 2
 
 [node name="AttackButton" type="Button" parent="HUD" unique_id=163304920]
-offset_left = 53.0
-offset_top = 503.0
-offset_right = 123.0
-offset_bottom = 534.0
+offset_left = 100.0
+offset_top = 401.0
+offset_right = 170.0
+offset_bottom = 432.0
 text = "ATACAR"
 
 [node name="ResultLabel" type="Label" parent="HUD" unique_id=1152273478]
-offset_left = 936.0
-offset_top = 7.0
-offset_right = 1001.0
-offset_bottom = 30.0
+offset_left = 786.0
+offset_top = 39.0
+offset_right = 851.0
+offset_bottom = 62.0
 text = "Results: "
 
 [node name="CorruptionLabel" type="Label" parent="HUD" unique_id=1692556983]
-offset_left = 793.0
-offset_top = 37.0
-offset_right = 899.0
-offset_bottom = 60.0
+offset_left = 958.0
+offset_top = 370.0
+offset_right = 1064.0
+offset_bottom = 393.0
 text = "CORRUPCIÓN"
 
 [node name="CorruptionBar" type="ProgressBar" parent="HUD" unique_id=1813228034]
-offset_left = 251.0
-offset_top = 571.0
-offset_right = 367.0
-offset_bottom = 600.0
-
-[node name="CorruptionBar2" type="ProgressBar" parent="HUD" unique_id=389509491]
-offset_left = 488.0
-offset_top = 571.0
-offset_right = 604.0
-offset_bottom = 600.0
-
-[node name="CorruptionBar3" type="ProgressBar" parent="HUD" unique_id=787356008]
-offset_left = 708.0
-offset_top = 570.0
-offset_right = 824.0
-offset_bottom = 599.0
+offset_left = 955.0
+offset_top = 422.0
+offset_right = 1071.0
+offset_bottom = 451.0
 
 [node name="SimPanel" type="Node2D" parent="HUD" unique_id=1854338598]
 
