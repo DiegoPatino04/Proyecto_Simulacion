@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://chpqvqoose2y" path="res://project/scenes/maps/Nivel_1/nivel_1.gd" id="1_35oe0"]
 [ext_resource type="PackedScene" uid="uid://bxit6jjhl6ed7" path="res://project/scenes/maps/Nivel_1/Main_dungeon/Dungeon.tscn" id="1_kovbj"]
 [ext_resource type="Texture2D" uid="uid://dlss1ft1rprfy" path="res://project/data/fondos/Escenario Full.png" id="2_kovbj"]
+[ext_resource type="PackedScene" uid="uid://g461hqpo2vyl" path="res://project/data/characteres/Enemigos/Enemy_Map.tscn" id="4_35oe0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_35oe0"]
 texture = ExtResource("2_kovbj")
@@ -194,3 +195,7 @@ tile_map_data = PackedByteArray("AAAFAPr/AAAAAAAAAAAFAPv/AAAAAAAAAAAFAPz/AAAAAAA
 tile_set = SubResource("TileSet_7c3oi")
 
 [node name="Spawn" type="Node2D" parent="." unique_id=1776381304]
+position = Vector2(235, 137)
+
+[node name="CharacterBody2D" parent="." unique_id=1586102167 instance=ExtResource("4_35oe0")]
+position = Vector2(-15, 105)

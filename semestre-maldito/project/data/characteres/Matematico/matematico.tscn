@@ -9,7 +9,7 @@ size = Vector2(25, 27.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g6f3k"]
 size = Vector2(24, 27)
 
-[node name="Matematico" type="CharacterBody2D" unique_id=228137257 node_paths=PackedStringArray("animation", "area_2D")]
+[node name="Matematico" type="CharacterBody2D" unique_id=228137257 node_paths=PackedStringArray("animation", "area_2D") groups=["Player"]]
 collision_layer = 8
 collision_mask = 34
 script = ExtResource("1_o6lld")
