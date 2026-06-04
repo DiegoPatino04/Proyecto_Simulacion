@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://cs8xxsvkn5yof"]
+
+[ext_resource type="Texture2D" uid="uid://cjqo3dj4n5qqw" path="res://project/data/fondos/Select_Menu.png" id="1_a2f5a"]
+[ext_resource type="Script" uid="uid://besxxva1cexkj" path="res://project/scenes/maps/Select_Menu/select_menu.gd" id="1_ry06y"]
+[ext_resource type="Script" uid="uid://cvs4e7qlqllop" path="res://project/scenes/maps/Select_Menu/CharacterData.gd" id="2_f0m13"]
+[ext_resource type="PackedScene" uid="uid://us24s8odfr17" path="res://project/data/characteres/Programador/programador.tscn" id="3_01kex"]
+[ext_resource type="Texture2D" uid="uid://dwcslrv5d7hqi" path="res://project/data/characteres/Programador/Programador_Foto.png" id="3_yyioi"]
+[ext_resource type="Texture2D" uid="uid://unslo0nplohc" path="res://project/data/characteres/Matematico/Matematico_Foto.png" id="4_lafcu"]
+[ext_resource type="Texture2D" uid="uid://l0y7gqlaubic" path="res://project/data/characteres/Redes/Redes_Foto.png" id="5_01kex"]
+[ext_resource type="PackedScene" uid="uid://dpbbblblhaqmr" path="res://project/data/characteres/Matematico/matematico.tscn" id="5_tbq0b"]
+[ext_resource type="PackedScene" uid="uid://c3ow3byp75f4e" path="res://project/data/characteres/Redes/Redes.tscn" id="7_mgr2x"]
+
+[sub_resource type="Resource" id="Resource_tbq0b"]
+script = ExtResource("2_f0m13")
+key = "Programador"
+image = ExtResource("3_yyioi")
+Scene = ExtResource("3_01kex")
+metadata/_custom_type_script = "uid://cvs4e7qlqllop"
+
+[sub_resource type="Resource" id="Resource_mgr2x"]
+script = ExtResource("2_f0m13")
+key = "Matematico"
+image = ExtResource("4_lafcu")
+Scene = ExtResource("5_tbq0b")
+metadata/_custom_type_script = "uid://cvs4e7qlqllop"
+
+[sub_resource type="Resource" id="Resource_sxbra"]
+script = ExtResource("2_f0m13")
+key = "Redes"
+image = ExtResource("5_01kex")
+Scene = ExtResource("7_mgr2x")
+metadata/_custom_type_script = "uid://cvs4e7qlqllop"
+
+[node name="SelectMenu" type="Control" unique_id=795457112]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ry06y")
+personajes = Array[ExtResource("2_f0m13")]([SubResource("Resource_tbq0b"), SubResource("Resource_mgr2x"), SubResource("Resource_sxbra")])
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1297443329]
+position = Vector2(576, 324)
+scale = Vector2(0.6800472, 0.6975242)
+texture = ExtResource("1_a2f5a")
+
+[node name="Anterior" type="Button" parent="." unique_id=645444695]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.349
+anchor_top = 0.55600005
+anchor_right = 0.349
+anchor_bottom = 0.55600005
+offset_left = -19.048004
+offset_top = -20.288025
+offset_right = 17.951965
+offset_bottom = 20.711975
+text = "<"
+
+[node name="Siguiente" type="Button" parent="." unique_id=530864816]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.57900006
+anchor_top = 0.56100005
+anchor_right = 0.57900006
+anchor_bottom = 0.56100005
+offset_left = -19.008057
+offset_top = -20.528046
+offset_right = 17.991943
+offset_bottom = 20.471954
+text = ">"
+
+[node name="Seleccionar" type="Button" parent="." unique_id=1552970784]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.0140004
+anchor_top = 3.061
+anchor_right = 4.0140004
+anchor_bottom = 3.061
+offset_left = -4141.1284
+offset_top = -1538.5281
+offset_right = -4044.1284
+offset_bottom = -1497.5281
+text = "Seleccionar"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2118764451]
+position = Vector2(532.00006, 348.00003)
+scale = Vector2(4.781249, 4.75)
+
+[connection signal="pressed" from="Anterior" to="." method="_on_anterior_pressed"]
+[connection signal="pressed" from="Siguiente" to="." method="_on_siguiente_pressed"]
+[connection signal="pressed" from="Seleccionar" to="." method="_on_seleccionar_pressed"]

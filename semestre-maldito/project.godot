@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GlobalState="*uid://dvhpn4je5pnae"
 SystemDynamics="*uid://c7wrp2f3oo4t6"
+Global="*uid://vt3bjm23gsol"
 
 [file_customization]
 

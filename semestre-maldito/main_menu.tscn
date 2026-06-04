@@ -31,15 +31,17 @@ texture = ExtResource("4_glbon")
 [node name="Button" type="Button" parent="." unique_id=502378890]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 15.787001
-anchor_top = 8.6
-anchor_right = 15.787001
-anchor_bottom = 8.6
-offset_left = -85.48004
-offset_top = -20.0
-offset_right = 74.51996
-offset_bottom = 26.0
+anchor_left = 14.550001
+anchor_top = 8.75
+anchor_right = 14.550001
+anchor_bottom = 8.75
+offset_left = -80.00006
+offset_top = -23.0
+offset_right = 79.99994
+offset_bottom = 23.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.019607844, 0.015686275, 0.6666667, 1)
+theme_override_colors/font_hover_color = Color(0.25490198, 0.4117647, 0.88235295, 1)
 text = "Start
 "
