@@ -217,7 +217,7 @@ func _process_turn_enemy() -> void:
 	if not battle_active: return
 
 	# EnemyAgent decide qué hacer con su lógica interna
-	var jugadores = ["Programador", "Matematico", "TecnicoRedes"]
+	var jugadores = ["Programador", "Matematico", "Redes"]
 	var decision  = enemy_agent.decidir_accion(jugadores)
 
 	match decision.accion:
