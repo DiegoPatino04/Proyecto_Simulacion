@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3pfyeg7n7bh8"
+path="res://.godot/imported/09. Boss!.mp3-0167323eb484b01ca5aa6a7a303b5ac7.mp3str"
+
+[deps]
+
+source_file="res://project/data/Efectos/Musica/09. Boss!.mp3"
+dest_files=["res://.godot/imported/09. Boss!.mp3-0167323eb484b01ca5aa6a7a303b5ac7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

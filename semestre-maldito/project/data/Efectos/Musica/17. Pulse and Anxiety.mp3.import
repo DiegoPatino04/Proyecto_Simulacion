@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhhiiwmn8ys8v"
+path="res://.godot/imported/17. Pulse and Anxiety.mp3-3ab3998d9c72e3c3991377e08ca535b9.mp3str"
+
+[deps]
+
+source_file="res://project/data/Efectos/Musica/17. Pulse and Anxiety.mp3"
+dest_files=["res://.godot/imported/17. Pulse and Anxiety.mp3-3ab3998d9c72e3c3991377e08ca535b9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

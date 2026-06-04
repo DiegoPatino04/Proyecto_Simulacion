@@ -4,13 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://dvj88fqrnmaq6" path="res://project/data/fondos/main-menu.jpg" id="2_fu7sn"]
 [ext_resource type="Texture2D" uid="uid://djl0efvg4l55e" path="res://project/data/fondos/title1.png" id="3_jix8l"]
 [ext_resource type="Texture2D" uid="uid://cgn4xq254taya" path="res://project/data/fondos/title2.png" id="4_glbon"]
+[ext_resource type="AudioStream" uid="uid://cleomhweran1b" path="res://project/data/Efectos/Musica/fronbondi_skegs-pad-science-documentary-arpeggio-ambient-background-track-320312.mp3" id="5_glbon"]
 
-[node name="MainMenu" type="Control" unique_id=1881226512]
+[node name="MainMenu" type="Control" unique_id=1881226512 node_paths=PackedStringArray("reproductor")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_7vrkn")
+reproductor = NodePath("Musica_Main_Menu")
 
 [node name="background" type="Sprite2D" parent="." unique_id=1847927580]
 position = Vector2(-2.000061, 2.000061)
@@ -45,3 +47,7 @@ theme_override_colors/font_color = Color(0.019607844, 0.015686275, 0.6666667, 1)
 theme_override_colors/font_hover_color = Color(0.25490198, 0.4117647, 0.88235295, 1)
 text = "Start
 "
+
+[node name="Musica_Main_Menu" type="AudioStreamPlayer2D" parent="." unique_id=774968866]
+stream = ExtResource("5_glbon")
+bus = &"Musica"

@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bxit6jjhl6ed7" path="res://project/scenes/maps/Nivel_1/Main_dungeon/Dungeon.tscn" id="1_kovbj"]
 [ext_resource type="Texture2D" uid="uid://dlss1ft1rprfy" path="res://project/data/fondos/Escenario Full.png" id="2_kovbj"]
 [ext_resource type="PackedScene" uid="uid://g461hqpo2vyl" path="res://project/data/characteres/Enemigos/Enemy_Map.tscn" id="4_35oe0"]
+[ext_resource type="Script" uid="uid://cldb5fq2hp2jq" path="res://project/scenes/maps/Nivel_1/area_2d.gd" id="5_7c3oi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_35oe0"]
 texture = ExtResource("2_kovbj")
@@ -182,6 +183,9 @@ physics_layer_4/collision_layer = 65
 physics_layer_4/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_35oe0")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_35oe0"]
+size = Vector2(64, 65)
+
 [node name="Nivel1" type="Node2D" unique_id=1446889346]
 position = Vector2(-7, 5)
 script = ExtResource("1_35oe0")
@@ -208,6 +212,15 @@ waypoints = [NodePath("../waypoints/Waypoint5"), NodePath("../waypoints/Waypoint
 [node name="Enemigo3" parent="." unique_id=1671298497 node_paths=PackedStringArray("waypoints") instance=ExtResource("4_35oe0")]
 position = Vector2(-248, -8)
 waypoints = [NodePath("../waypoints/Waypoint9"), NodePath("../waypoints/Waypoint10"), NodePath("../waypoints/Waypoint11"), NodePath("../waypoints/Waypoint12")]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=211432000]
+collision_layer = 64
+collision_mask = 8
+script = ExtResource("5_7c3oi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1976532840]
+position = Vector2(-184, 119.5)
+shape = SubResource("RectangleShape2D_35oe0")
 
 [node name="waypoints" type="Node2D" parent="." unique_id=910260362]
 position = Vector2(-17, -39)

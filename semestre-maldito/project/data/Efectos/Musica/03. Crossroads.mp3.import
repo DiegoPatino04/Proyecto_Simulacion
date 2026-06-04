@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6xl3fnapf1gq"
+path="res://.godot/imported/03. Crossroads.mp3-bdc30a9a8ad1d3471272b855fa5a4f19.mp3str"
+
+[deps]
+
+source_file="res://project/data/Efectos/Musica/03. Crossroads.mp3"
+dest_files=["res://.godot/imported/03. Crossroads.mp3-bdc30a9a8ad1d3471272b855fa5a4f19.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
