@@ -1,6 +1,6 @@
 # Semestre Maldito
 
-RPG por turnos desarrollado en Godot Engine 4.x como proyecto final de la asignatura Simulación por Computador — ExpoSimu 2024
+RPG por turnos desarrollado en Godot Engine 4.x como proyecto final de la asignatura Simulación por Computador — 
 Universidad Pedagógica y Tecnológica de Colombia (UPTC)
 
 
