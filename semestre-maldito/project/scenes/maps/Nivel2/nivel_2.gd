@@ -1,5 +1,5 @@
 extends Node2D
-
+@export var reproductor: AudioStreamPlayer2D
 var player = null
 
 func _ready() -> void:
@@ -7,3 +7,4 @@ func _ready() -> void:
 		player = Global.currentPlayer.instantiate()
 		add_child(player)
 		player.global_position = $Spawn.global_position
+		reproductor.play()

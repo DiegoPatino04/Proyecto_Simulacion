@@ -1,12 +1,14 @@
 extends Control
 
 @export var personajes: Array[CharacterData]
+@export var reproductor: AudioStreamPlayer2D
 @onready var spr = $Sprite2D
 
 var cont: int = 0
 
 func _ready() -> void:
 	spr.texture = personajes[0].image
+	reproductor.play()
 
 func sig() -> void:
 	if cont < personajes.size() -1:
@@ -32,3 +34,4 @@ func _on_anterior_pressed() -> void:
 func _on_seleccionar_pressed() -> void:
 	select()
 	get_tree().change_scene_to_file("res://project/scenes/maps/Escena Principal/escena_principal.tscn")
+	queue_free()

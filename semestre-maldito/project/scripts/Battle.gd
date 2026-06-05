@@ -63,7 +63,11 @@ func _ready() -> void:
 
 	# 2. Configurar RandomWalk con el grafo del mapa actual
 	var grafo = _get_grafo_mapa_actual()
-	random_walk.configurar_mapa("entrada", grafo, 1234)
+	random_walk.configurar_mapa(
+	"entrada",
+	grafo,
+	Time.get_unix_time_from_system()
+	)
 
 	# 3. Determinar qué enemigo aparece según la caminata
 	var nombre_enemigo = _determinar_enemigo()

@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://l0y7gqlaubic" path="res://project/data/characteres/Redes/Redes_Foto.png" id="5_01kex"]
 [ext_resource type="PackedScene" uid="uid://dpbbblblhaqmr" path="res://project/data/characteres/Matematico/matematico.tscn" id="5_tbq0b"]
 [ext_resource type="PackedScene" uid="uid://c3ow3byp75f4e" path="res://project/data/characteres/Redes/Redes.tscn" id="7_mgr2x"]
+[ext_resource type="AudioStream" uid="uid://c6xl3fnapf1gq" path="res://project/data/Efectos/Musica/03. Crossroads.mp3" id="10_tbq0b"]
 
 [sub_resource type="Resource" id="Resource_tbq0b"]
 script = ExtResource("2_f0m13")
@@ -31,7 +32,7 @@ image = ExtResource("5_01kex")
 Scene = ExtResource("7_mgr2x")
 metadata/_custom_type_script = "uid://cvs4e7qlqllop"
 
-[node name="SelectMenu" type="Control" unique_id=795457112]
+[node name="SelectMenu" type="Control" unique_id=795457112 node_paths=PackedStringArray("reproductor")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -40,6 +41,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ry06y")
 personajes = Array[ExtResource("2_f0m13")]([SubResource("Resource_tbq0b"), SubResource("Resource_mgr2x"), SubResource("Resource_sxbra")])
+reproductor = NodePath("Musica_Main_Menu")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1297443329]
 position = Vector2(576, 324)
@@ -88,6 +90,9 @@ text = "Seleccionar"
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2118764451]
 position = Vector2(576, 324)
 scale = Vector2(4.781249, 4.75)
+
+[node name="Musica_Main_Menu" type="AudioStreamPlayer2D" parent="." unique_id=1247190296]
+stream = ExtResource("10_tbq0b")
 
 [connection signal="pressed" from="Anterior" to="." method="_on_anterior_pressed"]
 [connection signal="pressed" from="Siguiente" to="." method="_on_siguiente_pressed"]
