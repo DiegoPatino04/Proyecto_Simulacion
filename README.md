@@ -1,14 +1,14 @@
-Semestre Maldito
+# Semestre Maldito
 
 RPG por turnos desarrollado en Godot Engine 4.x como proyecto final de la asignatura Simulación por Computador — ExpoSimu 2024
 Universidad Pedagógica y Tecnológica de Colombia (UPTC)
 
 
-Descripción
+# Descripción
 Semestre Maldito es un videojuego RPG por turnos con temática académica universitaria. Los jugadores controlan a tres estudiantes atrapados en un semestre imposible, enfrentando entidades corruptas del conocimiento que dominan los bloques del campus de la Academia Bit.
 Lo que diferencia este proyecto de un RPG convencional es que su mecánica de combate está completamente impulsada por cinco modelos de simulación independientes, visibles en tiempo real a través del HUD del juego.
 
-Características principales
+# Características principales
 
 Combate por turnos con 3 personajes jugables y 5 tipos de enemigos
 5 modelos de simulación integrados en el núcleo de combate
@@ -62,7 +62,8 @@ Godot Engine 4.x (recomendado 4.2 o superior)
 No se requieren plugins adicionales
 
 Pasos para ejecutar
-bash# 1. Clona el repositorio
+bash
+# 1. Clona el repositorio
 git clone https://github.com/DiegoPatino04/Proyecto_Simulacion.git
 
 # 2. Abre Godot Engine 4.x
