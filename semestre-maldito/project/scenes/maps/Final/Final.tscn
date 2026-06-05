@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bmivm7svt0bcf"]
+
+[node name="Final" type="Node2D" unique_id=1419355612]
+
+[node name="Label" type="Label" parent="." unique_id=325923164]
+offset_left = 460.0
+offset_top = 220.0
+offset_right = 722.0
+offset_bottom = 258.0
+text = "Gracias Por jugar la demo Pre alfa"
+
+[node name="Label2" type="Label" parent="." unique_id=1270595014]
+offset_left = 438.0
+offset_top = 327.0
+offset_right = 752.0
+offset_bottom = 350.0
+text = "Gracias por tanto, y perdon por tan poco"
